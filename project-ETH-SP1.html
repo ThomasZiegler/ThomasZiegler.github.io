@@ -16,7 +16,7 @@
     <!-- ===========================
     SITE TITLE
     =========================== -->
-    <title>Andreas Ziegler - Computer Vision & Robotics Researcher</title>
+    <title>Thomas Ziegler - Computer Vision & Robotics Student</title>
 
     <!-- ===========================
     FAVICONS
@@ -54,20 +54,19 @@
         ============================ -->
         <div id="header" class="row">
             <div class="col-md-4">
-                <img src="img/SP1.png" height="200">
+                <img src="img/ETH-SP1.png" height="200">
             </div>
             <!-- photo end-->
 
             <div class="col-md-8">
               <div class="row">
-                <h1>Robust object tracking in 3D by fusing ultra-wideband and vision</h1>
+                <h1>High Accuracy Visual Inertial SLAM or Autonomous Navigation of small UAVs</h1>
               </div>
               <div class="row" style="margin-top:14%;">
                 <p class="text-left align-bottom">
-                  Keywords: Computer Vision, Object Tracking, UWB, Sensor Fusion, Kalman Filtering
+                  Keywords: Robotics,Visual Inertial SLAM, Visual Inertial Odometry, Optimiaztion            
                   <br/>
-                  <a href="Thesis-SP1.pdf">Thesis</a> | 
-                  <a href="https://youtu.be/5BLik3PDl9M">Video</a>
+                  <a href="Thesis-SP1.pdf">Thesis</a>
                 </p>
               </div>
             </div><!-- Title end-->
@@ -84,15 +83,15 @@
                 <h3>Abstract</h3>
                 <h4>Motivation</h4>
                 <p>
-Object tracking is an important part for many applications especially for robotic systems interacting with humans. Problem statement Ultra-wideband (UWB) systems as well as vision based object trackers are widely known and used. Both of the systems have their advantages and disadvantages. UWB systems can provide the location of an object in 3D with an accuracy of approximate 10cm whereas vision based object trackers can only provide the location of an object in 2D pixel coordinates but with a more precise accuracy than UWB systems.
+                Unmanned Aerial Vehicles (UAVs) require accurate pose estimates with low latency in order to achieve a robust and stable flight behavior. However, due to the power and payload restrictions of aerial platforms, state estimation algorithms must provide these qualities under computational constraints. Monocular Visual Inertial Odometry (VIO) systems, consisting of a camera and an Inertial Measurement Unit (IMU), can satisfy these constraints and form the minimum sensor suite for metric 6 Degree of Freedom (DoF) pose estimation.
                 </p>
                 <h4>Approach</h4>
                 <p>
-So why not combine these two sources of information? Exactly this concept should be developed and evaluated in this semester project. The 3D position measured by the UWB system should be fused with the 2D pixel coordinates of a visual object tracker with an Extended Kalman Filter (EKF). A re-detection mechanism for the visual tracker should be implemented in addition to increase the usability as well as the stability of the system.
+                In this work, we propose an accurate keyframe based monocular VIO pipeline for onboard state estimation of UAVs. The publicly available Visual Inertial (VI) Simultaneous Localization and Mapping (SLAM) system VINS-Mono is therefore adapted. The performance of the VIO pipeline is evaluated for different parameter settings. Based on these evaluations, we propose a VIO pipeline running in real-time while only exhibiting a little loss in accuracy compared to the default implementation of VINS-Mono.
                 </p>
                 <h4>Result</h4>
                 <p>
-The proposed system shows a significantly better accuracy compared with the 3D positions measured by the UWB system. This proof of concept enables to apply this system to a wide range of applications and also allows further extensions.
+                The proposed VIO pipeline is extensively tested on all sequences of the EuRoC dataset. Furthermore, the real-time applicability is confirmed by deploying and running the VIO pipeline on a real UAV.
                 </p>
             </div><!--Project 1 end-->
         </div><!--Abstrace end-->
@@ -100,20 +99,20 @@ The proposed system shows a significantly better accuracy compared with the 3D p
 
         <!-- ===========================
         Video
-        ============================ -->
-        <div class="row">
+        ============================         <div class="row">
             <div class="col-md-12">
                 <h3>Video</h3>
                 <div class="embed-responsive embed-responsive-16by9">
                     <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/5BLik3PDl9M" frameborder="0" allowfullscreen>
-                    </iframe>
+                    </iframe> -->
+
                     <!--<iframe width="560" height="315" src="https://youtu.be/5BLik3PDl9M" frameborder="0" allowfullscreen>
                     </iframe> -->
-              </div>
+<!--              </div>
             </div>
         </div>
         <hr/>
-
+-->
         <!-- ===========================
         Downloads
         ============================ -->

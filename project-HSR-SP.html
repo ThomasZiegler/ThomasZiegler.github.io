@@ -16,7 +16,7 @@
     <!-- ===========================
     SITE TITLE
     =========================== -->
-    <title>Andreas Ziegler - Computer Vision & Robotics Researcher</title>
+    <title>Thomas Ziegler - Computer Vision & Robotics Student</title>
 
     <!-- ===========================
     FAVICONS
@@ -60,13 +60,11 @@
 
             <div class="col-md-8">
               <div class="row">
-                <h1>Zuverlässige Sturzdetektion mit 9DOF-Schuhen</h1>
+                <h1>Bluetooth Low Energy based View Direction Estimation</h1>
               </div>
               <div class="row" style="margin-top:10%">
                 <p class="text-left align-bottom">
-                  Keywords: Digital Signal Processing
-                  <br/>
-                  <a href="Thesis-HSR-SP.pdf">Thesis</a>
+                  Keywords: Digital Signal Processing, Wireless Communication
                 </p>
               </div>
             </div><!-- Title end-->
@@ -81,35 +79,17 @@
                 <!-- <div class="col-md-2">
                 </div> -->
                 <h3>Abstract</h3>
-                <h4>Ausgangslage</h4>
+                <h4>Introduction</h4>
                 <p>
-Das Institut für Kommunikationssysteme (ICOM) an der HSR entwickelte die “9 degree of
-freedom”-Schuhe (9DOF), welche bisher für Ganganalysen eingesetzt wurden. Diese Schuhe ver-
-fügen über je ein Modul welches mit einem Beschleunigungssensor, einem Drehratensensor und
-einem Magnetfeldsensor bestückt ist. Die zeitsynchronen Messdaten dieser Sensoren werden auf
-eine microSD-Karte gespeichert, über welche man die Daten gewinnen kann. Mit Hilfe eines
-MATLAB-Programmes lassen sich diese Messwerte auslesen und verarbeiten.
+                This semester thesis was elaborated on behalf of Phonak, a company specializing in hearing aid devices and wireless systems. Most people, who suffer from a hearing disability, are challenged when they need to listen to somebody in a noisy environment. For example on a cocktail party, where there are many other people talking as well. Phonak is approaching a new solution for this problem, to help users of hearing aids enjoy cocktail parties even more. The idea is that the ear level devices build up networks with each other and transfer the corresponding audio signals. E.g. the devices of user A record user A’s sounds and send them to the devices of user B, where the sounds are played back again. New gadgets should join and leave the networks automatically. To ensure privacy, no unnecessary devices should have access to one network. In other words only devices in a certain range and in the field of vision of the user should be allowed to join the network of her or his ear level devices.
                 </p>
-                <h4>Ziel der Arbeit</h4>
+                <h4>Idea</h4>
                 <p>
-Bis jetzt wurden diese 9DOF-Schuhe nur für Projekte, die sich mit der Ganganalyse beschäf-
-tigen, eingesetzt. Mit dieser Arbeit soll untersucht werden, ob sich ein auf dieser bestehenden
-Infrastruktur aufbauendes Sturzdetektionssystem umsetzen lässt. Dazu sollen zuerst bestehende
-Sturzdetektionssysteme analysiert und in Bezug auf diese Anwendung diskutiert werden. Danach
-sollen für dieses System am besten geeignete Verfahren mit MATLAB getestet und verglichen
-werden. Von den verschiedenen Verfahren soll ein erfolgsversprechender Ansatz mit MATLAB
-umgesetzt und unter bestimmten Bedingungen getestet werden. Diese Resultate sollen zeigen,
-ob sich ein Sturzdetektionssystem auf der Basis dieser Sensormodule realisieren lässt, welches
-dann später als Echtzeit-System zum Einsatz kommen soll.
+                The project is based on the nRF51822-BEACON from Nordic Semiconductor. It’s a development chip designed for Bluetooth LE applications. Each person wears two of these beacons on each side of her or his head, one to transmit and one to receive a Bluetooth LE signal. The main approach is to analyze the signal strength (RSSI value) of each transmitter at every receiver beacon. With this data, algorithms try to map the people around the user.
                 </p>
-                <h4>Resultat</h4>
+                <h4>Results</h4>
                 <p>
-Nachdem Studium verschiedener Veröffentlichungen zu Sturzdetektionssystemen wurden drei
-verschiedene Ansätze getestet und verglichen. Der Ansatz mit Spitzenwert-Detektion und an-
-schliessender Quittierung wurde dann in MATLAB umgesetzt und anschliessend mit Messdaten
-getestet. Die Resultate zeigen, dass ein Sturzdetektionssystem an den Schuhen realisierbar ist,
-wenn aggresive “activity of daily life” (ADL) wie Hinlegen, Hinknien, schnelles Gehen und Ren-
-nen ausgeschlossen werden können.
+                The result of this project is a design of the head mount for the beacons, a mathematical model of a basic two people situation and an algorithm, which analyzes this situation. There are also several side products, like software code and the implementation of an inertial sensor, which help for further development. The implemented algorithm doesn’t work real time, but with prerecorded data.
                 </p>
             </div><!--Project 1 end-->
         </div><!--Abstrace end-->
@@ -117,14 +97,14 @@ nen ausgeschlossen werden können.
 
         <!-- ===========================
         Downloads
-        ============================ -->
+        ============================ 
         <div class="row">
             <div class="col-md-12">
                 <h3>Downloads</h3>
                 <a href="Thesis-HSR-SP.pdf">Thesis</a>
             </div>
         </div>
-
+-->
     </div><!--container end-->
 
     <!-- ===========================

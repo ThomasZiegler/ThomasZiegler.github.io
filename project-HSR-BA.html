@@ -16,7 +16,7 @@
     <!-- ===========================
     SITE TITLE
     =========================== -->
-    <title>Andreas Ziegler - Computer Vision & Robotics Researcher</title>
+    <title>Thomas Ziegler - Computer Vision & Robotics Student</title>
 
     <!-- ===========================
     FAVICONS
@@ -60,13 +60,13 @@
 
             <div class="col-md-8">
               <div class="row">
-                <h1>Mobile datalogger for recording decentrally captured dynamic motor vehicle data</h1>
+                <h1>Adaptive Compensation of electromagnetic Forces</h1>
               </div>
               <div class="row" style="margin-top:9%">
                 <p class="text-left align-bottom">
-                  Keywords: Embedded Software Engineering
+                  Keywords: Digital Signal Processing 
                   <br/>
-                  <a href="Thesis-HSR-BA.pdf">Thesis</a>
+                  <a href="Thesis-HSR-BA-Poster.pdf">Poster</a>
                 </p>
               </div>
             </div><!-- Title end-->
@@ -81,17 +81,16 @@
                 <!-- <div class="col-md-2">
                 </div> -->
                 <h3>Abstract</h3>
-                <h4>Problem</h4>
+                <h4>Introduction</h4>
                 <p>
-The company Sportec AG from Höri ZH is a professional tuner for cars and is also active in motor sports. To analyze and optimize the driving dynamics of racing cars on racetracks, Sportec AG needs a measurement system. With this system it should be possible to measure high dynamic processes, like length changes of the dampers and acceleration. At the same time also slow processes like the oil temperature should be captured over longer time. The position of the car should be logged by the system with a Global Positioning System ( GPS ) receiver and the messages which are exchanged over the car internal Controller Area Network ( CAN ) bus should also be recorded by the system. Because of the rough environment and the high number of disturbing factors in a racing car, the Analog-to-Digital Converters ( ADC’s ) should be placed as close as possible to their sensors. To reach this goal, the system will be realized as a distributed system with Data Acquisition ( DAQ ) modules, which already exist, and with a central Data Logger ( DL ).
+Wireless power transfer technologies have gained a lot of popularity over the past years, mainly because of wireless charging systems for mobile devices. Qi (pronounced chee) is one of the most developed and known standards in this still very uncharted field of research. The main idea behind Qi is to transfer electrical energy without any physical contact, using resonant inductive coupling. Similar to charging an electric toothbrush, although a lot smarter and more complex. Companies all over the world implement Qi into their products, for example IKEA into their lamps, Lexus into their cars and mobile devices manufacturers into their phones and media players. The Institute of Communication Systems (ICOM) at the University of Applied Science Rapperswil (HSR) uses wireless power transfer systems to power many of their critical experiments. Depending on the power being transfered through the air, electromechanical forces occur between the transmitting and receiving coils. These physical forces can harm the experiments and falsify the results.
                 </p>
-                <h4>Proceeding</h4>
+                <h4>Objective</h4>
                 <p>
-In the analysis the specification for the mobile data logger has to be done as the first step, according to the job description. In the next step, the best fitting hardware has to be evaluated and ordered. After the hardware is chosen, the development of the software, starting with the analysis, followed by the design and the implementation, must be done. At the end the whole mobile data logger (hardware and software) has to be tested.
-                </p>
-                <h4>Result</h4>
+				The goal of this research is to analyze the physical effects and to design experiments and corresponding measurement setups to identify the forces. In the end, approaches to eliminate or compensate these forces shall be proposed.</p>
+                <h4>Results</h4>
                 <p>
-With the PandaBoard, an embedded platform was chosen on which an normal Linux operating system can run. The used Linux distribution is “Ubuntu Core”, a “Ubuntu” version with a very small memory footprint that still allows to install a lot of standard Linux packets. The mobile data logger software allows five DAQ modules to connect over Wireless Local Area Network ( WLAN ). Over these WLAN connections, the DAQ modules get configured, their timer reseted and the measurement started and stopped. With IEEE802.15.4 broadcast messages every 250 ms over a XBee module, the five DAQ modules are kept in sync. The sensor data which the DAQ modules are sending over WLAN are received by the mobile data logger software and saved to a file on a SD card. The received positions from the GPS receiver are also saved to a file on a SD card.
+				A MATLAB controlled, fully automated measurement setup was designed and implemented. Over ten sensors, including temperature and relative humidity sensors, scan the behavior of the system during experiments. The measurement setup delivers repeatable data sets, very fast and without any assistance. It can easily be adapted to new experiments. The physical effects were analyzed theoretically and a mathematical model was elaborated. The measurement results revealed the forces between the transmitting and receiving coils according to the electrical power transmitted. These findings can now be used to design filters, which correct affected measurement data of critical experiments.
                 </p>
             </div><!--Project 1 end-->
         </div><!--Abstrace end-->
@@ -99,14 +98,14 @@ With the PandaBoard, an embedded platform was chosen on which an normal Linux op
 
         <!-- ===========================
         Downloads
-        ============================ -->
+        ============================ 
         <div class="row">
             <div class="col-md-12">
                 <h3>Downloads</h3>
                 <a href="Thesis-HSR-BA.pdf">Thesis</a>
             </div>
         </div>
-
+-->
     </div><!--container end-->
 
     <!-- ===========================
